@@ -1,0 +1,107 @@
+/*
+ * Context Tokens — 场景层，特定用途的覆盖
+ * 命名：--{context}-{element}-{property}
+ */
+
+:root {
+  /* ============================================
+     网站卡片
+     ============================================ */
+  --card-bg: var(--card);
+  --card-border: var(--border);
+  --card-radius: var(--radius-lg);
+  --card-shadow: var(--shadow-2);
+  --card-padding: var(--size-4);
+
+  /* ============================================
+     导航栏
+     ============================================ */
+  --nav-bg: var(--background);
+  --nav-border: var(--border);
+  --nav-height: var(--size-10);
+  --nav-padding: var(--size-5);
+
+  /* ============================================
+     按钮
+     ============================================ */
+  --btn-primary-bg: var(--primary);
+  --btn-primary-fg: var(--primary-foreground);
+  --btn-primary-hover: var(--oc-indigo-8);
+  --btn-radius: var(--radius-md);
+  --btn-padding-x: var(--size-4);
+  --btn-padding-y: var(--size-2);
+  --btn-font-size: var(--font-size-sm);
+
+  --btn-secondary-bg: var(--secondary);
+  --btn-secondary-fg: var(--secondary-foreground);
+
+  --btn-outline-bg: transparent;
+  --btn-outline-fg: var(--primary);
+  --btn-outline-border: var(--border);
+
+  --btn-ghost-bg: transparent;
+  --btn-ghost-fg: var(--foreground);
+  --btn-ghost-hover: var(--muted);
+
+  /* ============================================
+     表单
+     ============================================ */
+  --input-bg: var(--background);
+  --input-border: var(--input);
+  --input-border-focus: var(--ring);
+  --input-radius: var(--radius-md);
+  --input-padding-x: var(--size-3);
+  --input-padding-y: var(--size-2);
+  --input-font-size: var(--font-size-sm);
+
+  --label-color: var(--foreground);
+  --label-font-size: var(--font-size-sm);
+  --label-font-weight: var(--font-weight-5);
+
+  /* ============================================
+     海报 / 社交媒体图片
+     ============================================ */
+  --poster-bg: var(--background);
+  --poster-fg: var(--foreground);
+  --poster-title-size: var(--font-size-5);
+  --poster-subtitle-size: var(--font-size-3);
+  --poster-body-size: var(--font-size-2);
+  --poster-caption-size: var(--font-size-0);
+  --poster-spacing: var(--size-5);
+  --poster-radius: var(--radius-xl);
+  --poster-shadow: var(--shadow-4);
+  --poster-gradient: var(--gradient-5);
+  --poster-noise: var(--noise-2);
+
+  /* ============================================
+     演示文稿 (PPT)
+     ============================================ */
+  --ppt-width: 1920px;
+  --ppt-height: 1080px;
+  --ppt-bg: var(--background);
+  --ppt-fg: var(--foreground);
+  --ppt-title-size: var(--font-size-6);
+  --ppt-subtitle-size: var(--font-size-4);
+  --ppt-body-size: var(--font-size-2);
+  --ppt-padding: var(--size-8);
+  --ppt-grid-gap: var(--size-6);
+
+  /* ============================================
+     文章 / 博客
+     ============================================ */
+  --article-max-width: 65ch;
+  --article-bg: var(--background);
+  --article-fg: var(--foreground);
+  --article-title-size: var(--font-size-5);
+  --article-body-size: var(--font-size-2);
+  --article-line-height: var(--font-lineheight-3);
+  --article-code-bg: var(--oc-gray-1);
+
+  /* ============================================
+     数据展示
+     ============================================ */
+  --data-label-color: var(--muted-foreground);
+  --data-value-color: var(--foreground);
+  --data-value-size: var(--font-size-3);
+  --data-unit-color: var(--muted-foreground);
+}

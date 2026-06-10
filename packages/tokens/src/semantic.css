@@ -1,0 +1,129 @@
+/*
+ * Semantic Tokens — 语义层，定义用途
+ * 借鉴 shadcn 的 background/foreground 配对模式
+ * 借鉴 CMS Gov 的三层继承架构
+ * 命名：--{category}-{role}
+ */
+
+/* ============================================
+   亮色主题（默认）
+   ============================================ */
+:root {
+  /* 背景 / 前景 配对（shadcn 核心模式） */
+  --background: var(--oc-gray-0);
+  --foreground: var(--oc-gray-9);
+
+  /* 卡片（抬升面） */
+  --card: var(--oc-white);
+  --card-foreground: var(--oc-gray-9);
+
+  /* 浮层（Popover/Tooltip） */
+  --popover: var(--oc-white);
+  --popover-foreground: var(--oc-gray-9);
+
+  /* 主要操作（品牌色） */
+  --primary: var(--oc-indigo-7);
+  --primary-foreground: var(--oc-white);
+
+  /* 次要操作 */
+  --secondary: var(--oc-gray-1);
+  --secondary-foreground: var(--oc-gray-9);
+
+  /* 弱化面（占位符、次要信息） */
+  --muted: var(--oc-gray-1);
+  --muted-foreground: var(--oc-gray-6);
+
+  /* 强调（悬停/聚焦态） */
+  --accent: var(--oc-indigo-0);
+  --accent-foreground: var(--oc-indigo-8);
+
+  /* 危险/错误 */
+  --destructive: var(--oc-red-6);
+  --destructive-foreground: var(--oc-white);
+
+  /* 边框 / 表单控件 / 焦点环 */
+  --border: var(--oc-gray-3);
+  --input: var(--oc-gray-3);
+  --ring: var(--oc-indigo-6);
+
+  /* 图表调色板 */
+  --chart-1: var(--oc-indigo-7);
+  --chart-2: var(--oc-teal-7);
+  --chart-3: var(--oc-orange-6);
+  --chart-4: var(--oc-pink-7);
+  --chart-5: var(--oc-violet-6);
+
+  /* 语义色彩 */
+  --success: var(--oc-green-7);
+  --success-foreground: var(--oc-white);
+  --warning: var(--oc-yellow-7);
+  --warning-foreground: var(--oc-gray-9);
+  --info: var(--oc-blue-6);
+  --info-foreground: var(--oc-white);
+  --error: var(--oc-red-6);
+  --error-foreground: var(--oc-white);
+
+  /* 圆角（shadcn 模式：单一基础值派生梯度） */
+  --radius: 0.5rem;
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) * 1.4);
+  --radius-xl: calc(var(--radius) * 2);
+
+  /* 排版语义 */
+  --font-sans: var(--font-system-ui);
+  --font-serif: var(--font-serif);
+  --font-mono: var(--font-monospace);
+  --font-size-xs: var(--font-size-0);
+  --font-size-sm: var(--font-size-1);
+  --font-size-base: var(--font-size-2);
+  --font-size-lg: var(--font-size-3);
+  --font-size-xl: var(--font-size-4);
+  --font-size-2xl: var(--font-size-5);
+  --font-size-3xl: var(--font-size-6);
+}
+
+/* ============================================
+   暗色主题
+   ============================================ */
+.dark,
+[data-theme="dark"] {
+  --background: var(--oc-gray-9);
+  --foreground: var(--oc-gray-0);
+
+  --card: var(--oc-gray-8);
+  --card-foreground: var(--oc-gray-0);
+
+  --popover: var(--oc-gray-8);
+  --popover-foreground: var(--oc-gray-0);
+
+  --primary: var(--oc-indigo-5);
+  --primary-foreground: var(--oc-gray-9);
+
+  --secondary: var(--oc-gray-8);
+  --secondary-foreground: var(--oc-gray-0);
+
+  --muted: var(--oc-gray-8);
+  --muted-foreground: var(--oc-gray-5);
+
+  --accent: var(--oc-indigo-9);
+  --accent-foreground: var(--oc-indigo-2);
+
+  --destructive: var(--oc-red-7);
+  --destructive-foreground: var(--oc-white);
+
+  --border: var(--oc-gray-7);
+  --input: var(--oc-gray-7);
+  --ring: var(--oc-indigo-5);
+
+  --chart-1: var(--oc-indigo-5);
+  --chart-2: var(--oc-teal-5);
+  --chart-3: var(--oc-orange-5);
+  --chart-4: var(--oc-pink-5);
+  --chart-5: var(--oc-violet-5);
+
+  --success: var(--oc-green-5);
+  --warning: var(--oc-yellow-5);
+  --info: var(--oc-blue-5);
+  --error: var(--oc-red-5);
+}

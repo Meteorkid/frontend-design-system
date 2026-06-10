@@ -1,0 +1,23 @@
+{
+  "name": "@fds/tokens",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Design tokens: Open Props + Open Color + shadcn semantic layer",
+  "main": "dist/tokens.css",
+  "exports": {
+    ".": "./dist/tokens.css",
+    "./json": "./dist/tokens.json",
+    "./open-color": "./src/open-color.json",
+    "./semantic": "./src/semantic.css",
+    "./context": "./src/context.css"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "export:json": "node scripts/export-json.mjs",
+    "lint": "echo 'no lint'",
+    "typecheck": "echo 'no typecheck'"
+  },
+  "dependencies": {
+    "open-props": "^1.7.13"
+  }
+}

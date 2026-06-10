@@ -1,0 +1,46 @@
+# Frontend Design System
+
+基于 Open Props + shadcn-ui + Open Color + Penpot 的前端设计系统。
+
+## Token 架构
+
+三层继承模式（参考 CMS Gov Design System）：
+
+1. **Primitive 层**：Open Props（500+ CSS 变量）+ Open Color（130 色）
+   - 命名：`--oc-{color}-{shade}`、`--size-{n}`、`--shadow-{n}`
+2. **Semantic 层**：shadcn background/foreground 配对模式
+   - 命名：`--background`、`--foreground`、`--primary`、`--secondary`
+   - 暗色主题：`.dark` 类切换
+3. **Context 层**：场景特定 token
+   - 命名：`--card-*`、`--btn-*`、`--poster-*`、`--ppt-*`
+
+## 组件库
+
+基于 shadcn-ui，56 个 React 组件：
+- 布局：Card, Separator, Scroll Area, Resizable
+- 导航：Breadcrumb, Navigation Menu, Sidebar, Pagination
+- 表单：Button, Input, Select, Checkbox, Radio, Slider, Switch, Textarea
+- 反馈：Alert, Dialog, Drawer, Toast, Tooltip, Progress
+- 数据：Table, Calendar, Badge, Skeleton
+
+## 设计工具
+
+- **Penpot**：Docker 自托管，端口 9001
+- **Token 导入**：`packages/tokens/dist/tokens.json`（DTCG 格式）
+- **组件预览**：`apps/web` Next.js 站点
+
+## 命名规范
+
+- 颜色：`--oc-{color}-{shade}`（原始）→ `--{role}`（语义）→ `--{context}-{element}`（场景）
+- 间距：`--size-{n}`（n × 4px）
+- 圆角：`--radius-{sm|md|lg|xl}`
+- 字号：`--font-size-{xs|sm|base|lg|xl|2xl|3xl}`
+
+## 文件结构
+
+- `packages/tokens/src/` — Token 源文件（primitive/semantic/context CSS）
+- `packages/components/` — shadcn 组件
+- `apps/web/` — Next.js 文档/预览站
+- `penpot/` — Penpot Docker 配置
+- `DESIGN.md` — 设计规范
+- `CHECKLIST.md` — 设计检查清单

@@ -1,0 +1,23 @@
+{
+  "name": "frontend-design-system",
+  "version": "0.1.0",
+  "private": true,
+  "description": "基于 Open Props + shadcn-ui + Penpot 的前端设计系统",
+  "scripts": {
+    "dev": "pnpm --filter @fds/web dev",
+    "build": "pnpm --filter @fds/web build",
+    "tokens:build": "pnpm --filter @fds/tokens build",
+    "tokens:export": "pnpm --filter @fds/tokens export:json",
+    "penpot:up": "cd penpot && docker compose -p penpot up -d",
+    "penpot:down": "cd penpot && docker compose -p penpot down",
+    "sync": "node scripts/sync-to-open-design.mjs --target ~/github/open-design-ecosystem",
+    "sync:tokens": "node scripts/sync-to-open-design.mjs --target ~/github/open-design-ecosystem --tokens-only",
+    "sync:component": "node scripts/sync-to-open-design.mjs --target ~/github/open-design-ecosystem --component",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=9"
+  }
+}

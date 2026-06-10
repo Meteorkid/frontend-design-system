@@ -1,0 +1,18 @@
+/*
+ * Design Tokens — 三层架构
+ *
+ * Layer 1: Primitive（原始值）— Open Props + Open Color
+ * Layer 2: Semantic（语义层）— shadcn background/foreground 模式
+ * Layer 3: Context（场景层）— 海报/PPT/卡片/导航等特定用途
+ *
+ * 架构参考：CMS Gov Design System 三层 token 继承模式
+ */
+
+/* Layer 1: 原始值 */
+@import "./primitive.css";
+
+/* Layer 2: 语义层 */
+@import "./semantic.css";
+
+/* Layer 3: 场景层 */
+@import "./context.css";
