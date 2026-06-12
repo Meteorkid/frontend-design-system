@@ -14,9 +14,14 @@ const distDir = join(root, 'dist');
 mkdirSync(distDir, { recursive: true });
 
 // 读取三层 CSS
-const primitive = readFileSync(join(srcDir, 'primitive.css'), 'utf8');
+let primitive = readFileSync(join(srcDir, 'primitive.css'), 'utf8');
 const semantic = readFileSync(join(srcDir, 'semantic.css'), 'utf8');
 const context = readFileSync(join(srcDir, 'context.css'), 'utf8');
+
+// 内联 open-props，消除嵌套 @import 依赖
+const openPropsPath = join(root, 'node_modules/open-props/open-props.min.css');
+const openProps = readFileSync(openPropsPath, 'utf8');
+primitive = primitive.replace(/^@import "open-props";$/m, openProps);
 
 // 合并为一个 CSS 文件
 const combined = `/*

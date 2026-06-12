@@ -63,16 +63,29 @@
   --error: var(--oc-red-6);
   --error-foreground: var(--oc-white);
 
-  /* 圆角（shadcn 模式：单一基础值派生梯度） */
+  /* 圆角（与 @theme inline 保持一致的刻度） */
   --radius: 0.5rem;
   --radius-sm: calc(var(--radius) * 0.6);
-  --radius-md: var(--radius);
-  --radius-lg: calc(var(--radius) * 1.4);
-  --radius-xl: calc(var(--radius) * 2);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* 侧边栏 */
+  --sidebar: var(--oc-gray-0);
+  --sidebar-foreground: var(--oc-gray-9);
+  --sidebar-primary: var(--oc-indigo-7);
+  --sidebar-primary-foreground: var(--oc-white);
+  --sidebar-accent: var(--oc-gray-1);
+  --sidebar-accent-foreground: var(--oc-gray-9);
+  --sidebar-border: var(--oc-gray-3);
+  --sidebar-ring: var(--oc-indigo-6);
 
   /* 排版语义 */
   --font-sans: var(--font-system-ui);
-  --font-serif: var(--font-serif);
+  --font-serif: ui-serif, serif;
   --font-mono: var(--font-monospace);
   --font-size-xs: var(--font-size-0);
   --font-size-sm: var(--font-size-1);
@@ -123,7 +136,21 @@
   --chart-5: var(--oc-violet-5);
 
   --success: var(--oc-green-5);
+  --success-foreground: var(--oc-white);
   --warning: var(--oc-yellow-5);
+  --warning-foreground: var(--oc-gray-9);
   --info: var(--oc-blue-5);
+  --info-foreground: var(--oc-white);
   --error: var(--oc-red-5);
+  --error-foreground: var(--oc-white);
+
+  /* 侧边栏 */
+  --sidebar: var(--oc-gray-9);
+  --sidebar-foreground: var(--oc-gray-0);
+  --sidebar-primary: var(--oc-indigo-5);
+  --sidebar-primary-foreground: var(--oc-white);
+  --sidebar-accent: var(--oc-gray-8);
+  --sidebar-accent-foreground: var(--oc-gray-0);
+  --sidebar-border: var(--oc-gray-7);
+  --sidebar-ring: var(--oc-indigo-5);
 }
